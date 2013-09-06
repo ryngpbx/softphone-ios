@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Title</key>
+	<string>Example Content</string>
+	<key>StringsTable</key>
+	<string>Jazinga</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Account</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Email Address</string>
+			<key>Key</key>
+			<string>email</string>
+			<key>DefaultValue</key>
+			<string></string>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Sign In Automatically</string>
+			<key>Key</key>
+			<string>auto_login</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Call Options</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Default to Speaker</string>
+			<key>Key</key>
+			<string>default_speaker</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Dial Sounds</string>
+			<key>Key</key>
+			<string>default_dial_feedback</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Vibrate</string>
+			<key>Key</key>
+			<string>vibrate</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Record Greetings</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>BLFullButtonSpecifier</string>
+			<key>Title</key>
+			<string>Voicemail</string>
+			<key>Key</key>
+			<string>voicemail</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>BLFullButtonSpecifier</string>
+			<key>Title</key>
+			<string>Your Name</string>
+			<key>Key</key>
+			<string>name</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>BLInfoTextSpecifier</string>
+			<key>Content</key>
+			<string>Clicking one of the above buttons will call the Jazinga message recording system so that the appropriate greeting message can be recorded.</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>BLFullButtonSpecifier</string>
+			<key>Title</key>
+			<string>Logout</string>
+			<key>Key</key>
+			<string>logout</string>
+		</dict>
+	</array>
+</dict>
+</plist>

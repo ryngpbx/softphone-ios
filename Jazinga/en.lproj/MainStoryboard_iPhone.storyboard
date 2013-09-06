@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="QpL-GO-rXU">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="5">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" title="Login" wantsFullScreenLayout="YES" modalTransitionStyle="crossDissolve" id="2" userLabel="Login" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" id="QWD-LE-3Mo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jazinga Name" minimumFontSize="17" clearButtonMode="whileEditing" id="Lh7-Kl-4Wi">
+                                        <rect key="frame" x="20" y="109" width="280" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" id="nn0-ba-CS1">
+                                        <rect key="frame" x="20" y="139" width="280" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="go" secureTextEntry="YES"/>
+                                    </textField>
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="jazinga-logo-white.png" id="vsF-yb-9WY">
+                                        <rect key="frame" x="85" y="20" width="150" height="80"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GC2-kH-cUN" customClass="GradientButton">
+                                        <rect key="frame" x="110" y="184" width="101" height="37"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signIn:" destination="2" eventType="touchUpInside" id="Asn-Zk-GU8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.33725490196078434" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="b4L-jZ-4Ly"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="password" destination="nn0-ba-CS1" id="aCy-Ul-uNN"/>
+                        <outlet property="signInButton" destination="GC2-kH-cUN" id="78K-Nh-JGO"/>
+                        <outlet property="username" destination="Lh7-Kl-4Wi" id="OcU-jp-2J5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="-1451"/>
+        </scene>
+        <!--Profile View Controller - Settings-->
+        <scene sceneID="4sD-MJ-PWS">
+            <objects>
+                <viewController storyboardIdentifier="Settings" title="Settings" id="fHK-7j-nJO" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qiV-GG-ljl">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="0mn-RJ-480">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.33725491169999999" blue="0.48235294220000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="qYN-y5-v7M"/>
+                    <connections>
+                        <outlet property="tableView" destination="0mn-RJ-480" id="2f1-PA-Aq8"/>
+                        <segue destination="2" kind="modal" identifier="Login" id="dyD-ta-abA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfI-ej-lcm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="522" y="1118"/>
+        </scene>
+        <!--Inbound-->
+        <scene sceneID="3qx-rV-sWA">
+            <objects>
+                <viewController storyboardIdentifier="InboundViewController" title="Incoming Call" id="hQD-Pg-8TC" userLabel="Inbound" customClass="InboundViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1wx-Df-ctp">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="TyC-HJ-cZ2">
+                                <rect key="frame" x="0.0" y="91" width="320" height="366"/>
+                                <subviews>
+                                    <view hidden="YES" opaque="NO" contentMode="scaleToFill" id="D6L-kt-Dzw" userLabel="Dialpad Controls">
+                                        <rect key="frame" x="0.0" y="45" width="320" height="277"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0cO-tw-UIe" userLabel="1 Button">
+                                                <rect key="frame" x="0.0" y="1" width="107" height="68"/>
+                                                <color key="backgroundColor" red="0.050980396570000003" green="0.070588238540000001" blue="0.1647058874" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="hQD-Pg-8TC" eventType="touchDown" id="vKU-mK-cmZ"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpOutside" id="Mj2-u7-Xj8"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="rux-tL-gBq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vju-y6-Fdo" userLabel="2 Button">
+                                                <rect key="frame" x="107" y="1" width="107" height="68"/>
+                                                <color key="backgroundColor" red="0.050980396570000003" green="0.070588238540000001" blue="0.1647058874" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="hQD-Pg-8TC" eventType="touchDown" id="kCh-Jd-b2Y"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="7rc-ae-efS"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpOutside" id="q3N-bd-tyg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dCK-ix-BI5" userLabel="3 Button">
+                                                <rect key="frame" x="214" y="1" width="107" height="68"/>
+                                                <color key="backgroundColor" red="0.050980396570000003" green="0.070588238540000001" blue="0.1647058874" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.058823533359999999" green="0.09803922474" blue="0.2078431547" alpha="1" colorSpace="deviceRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="hQD-Pg-8TC" eventType="touchDown" id="h2C-7X-Lbm"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="6z0-zI-P3C"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpOutside" id="dfx-bI-Vk5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qvM-MF-xIP" userLabel="4 Button">
+                                                <rect key="frame" x="0.0" y="70" width="107" height="68"/>
+                                                <color key="backgroundColor" red="0.050980396570000003" green="0.070588238540000001" blue="0.1647058874" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="hQD-Pg-8TC" eventType="touchDown" id="VYK-Ys-esk"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpOutside" id="C28-sr-nrA"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="yON-Ng-55r"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Uy-xr-l69" userLabel="5 Button">
+                                                <rect key="frame" x="107" y="70" width="107" height="68"/>
+                                                <color key="backgroundColor" red="0.050980396570000003" green="0.070588238540000001" blue="0.1647058874" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="hQD-Pg-8TC" eventType="touchDown" id="IPG-Ew-Efh"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="3AY-qO-ce2"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpOutside" id="zMg-Th-9dL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O7j-0N-5CZ" userLabel="6 Button">
+                                                <rect key="frame" x="214" y="70" width="106" height="68"/>
+                                                <color key="backgroundColor" red="0.050980396570000003" green="0.070588238540000001" blue="0.1647058874" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="hQD-Pg-8TC" eventType="touchDown" id="Ta9-iX-jak"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpOutside" id="DE7-er-HcP"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="ZEq-rh-Eo3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7p8-U3-PeY" userLabel="7 Button">
+                                                <rect key="frame" x="0.0" y="139" width="107" height="68"/>
+                                                <color key="backgroundColor" red="0.050980396570000003" green="0.070588238540000001" blue="0.1647058874" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="hQD-Pg-8TC" eventType="touchDown" id="a7u-Qk-dmc"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="bj6-D8-rzy"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpOutside" id="oBy-LZ-xid"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7Jd-kp-4fy" userLabel="8 Button">
+                                                <rect key="frame" x="107" y="139" width="107" height="68"/>
+                                                <color key="backgroundColor" red="0.050980396570000003" green="0.070588238540000001" blue="0.1647058874" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="hQD-Pg-8TC" eventType="touchDown" id="Jat-CJ-1yU"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpOutside" id="1rg-IY-Jmv"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="Wm4-uE-1Wx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OhI-Ee-7ZU" userLabel="9 Button">
+                                                <rect key="frame" x="214" y="139" width="106" height="68"/>
+                                                <color key="backgroundColor" red="0.050980396570000003" green="0.070588238540000001" blue="0.1647058874" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="hQD-Pg-8TC" eventType="touchDown" id="KBR-tN-VqZ"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="rTX-fA-KSV"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpOutside" id="sUt-Dz-TVv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H9x-hB-cU5" userLabel="* Button">
+                                                <rect key="frame" x="0.0" y="208" width="107" height="68"/>
+                                                <color key="backgroundColor" red="0.050980396570000003" green="0.070588238540000001" blue="0.1647058874" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="hQD-Pg-8TC" eventType="touchDown" id="mzv-QS-ZVv"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpOutside" id="pBe-2A-2qI"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="tLL-Ai-6Em"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O2d-jC-DKK" userLabel="0 Button">
+                                                <rect key="frame" x="107" y="208" width="107" height="68"/>
+                                                <color key="backgroundColor" red="0.050980396570000003" green="0.070588238540000001" blue="0.1647058874" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="hQD-Pg-8TC" eventType="touchDown" id="hz4-uQ-GVS"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpOutside" id="UtK-kC-Ok0"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="xdW-4Q-Meo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f9v-Ih-4IW" userLabel="# Button">
+                                                <rect key="frame" x="214" y="208" width="106" height="68"/>
+                                                <color key="backgroundColor" red="0.050980396570000003" green="0.070588238540000001" blue="0.1647058874" alpha="1" colorSpace="deviceRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouchDown:" destination="hQD-Pg-8TC" eventType="touchDown" id="sJE-DI-WxP"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpOutside" id="76w-yc-H8O"/>
+                                                    <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="JsP-s5-VYF"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Uac-v9-mvj">
+                                                <rect key="frame" x="33" y="220" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="3kl-aC-z5x">
+                                                <rect key="frame" x="139" y="220" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="EAQ-VX-sQ5">
+                                                <rect key="frame" x="139" y="241" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="zuI-yc-kob">
+                                                <rect key="frame" x="33" y="241" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="JiV-ZH-Hf4">
+                                                <rect key="frame" x="247" y="220" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="YLj-Zn-RvS">
+                                                <rect key="frame" x="247" y="241" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="pVa-IM-aoR">
+                                                <rect key="frame" x="33" y="15" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="3ck-vz-KTf">
+                                                <rect key="frame" x="139" y="15" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ABC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="L9W-oH-ttO">
+                                                <rect key="frame" x="139" y="36" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="55o-Vk-AC7">
+                                                <rect key="frame" x="247" y="15" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DEF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ush-7V-rHu">
+                                                <rect key="frame" x="247" y="36" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qzb-K6-SXr">
+                                                <rect key="frame" x="33" y="83" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="bTu-MH-P9S">
+                                                <rect key="frame" x="139" y="83" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="JKL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="PWP-df-cu1">
+                                                <rect key="frame" x="139" y="104" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="GHI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="CGU-BU-A2N">
+                                                <rect key="frame" x="33" y="104" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="pVa-bb-O4w">
+                                                <rect key="frame" x="247" y="83" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MNO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="s4m-UW-355">
+                                                <rect key="frame" x="247" y="104" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="pR5-Jk-Rm9">
+                                                <rect key="frame" x="33" y="151" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ue5-Tr-xlE">
+                                                <rect key="frame" x="139" y="151" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="TUV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="FFy-re-d18">
+                                                <rect key="frame" x="139" y="172" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PQRS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Mvo-Ek-G09">
+                                                <rect key="frame" x="33" y="172" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="BHe-E3-4uE">
+                                                <rect key="frame" x="247" y="151" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WXYZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="owD-UA-IGh">
+                                                <rect key="frame" x="247" y="172" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.33725491169999999" blue="0.48235294220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view hidden="YES" opaque="NO" contentMode="scaleToFill" id="PT1-5Q-GnX" userLabel="In Call Controls">
+                                        <rect key="frame" x="0.0" y="99" width="320" height="168"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TPG-uj-Mhp" userLabel="Mute" customClass="GradientButton">
+                                                <rect key="frame" x="19" y="0.0" width="95" height="84"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="mute:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="azy-2W-hnp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ySB-uv-9gn" userLabel="Dialpad" customClass="GradientButton">
+                                                <rect key="frame" x="115" y="0.0" width="89" height="84"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showDialpad:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="m37-wV-1MB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XLj-ST-SD1" userLabel="Speaker" customClass="GradientButton">
+                                                <rect key="frame" x="205" y="0.0" width="95" height="84"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toggleAudio:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="nZP-Gv-pmH"/>
+                                                    <action selector="toggleSpeaker:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="jeW-oY-5bl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uyO-h1-fVa" userLabel="Hold" customClass="GradientButton">
+                                                <rect key="frame" x="205" y="84" width="95" height="84"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="hold:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="iay-Cr-ZD6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fuE-ZT-Y4j" userLabel="Transfer" customClass="GradientButton">
+                                                <rect key="frame" x="115" y="84" width="89" height="84"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="transfer:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="Dtu-gF-1GX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="38i-rR-KI5" userLabel="Add Call" customClass="GradientButton">
+                                                <rect key="frame" x="19" y="84" width="95" height="84"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addCall:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="QoB-39-BDz"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" image="transfer.png" id="vG3-UZ-XYJ">
+                                                <rect key="frame" x="145" y="103" width="29" height="30"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="transfer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="Fqu-3L-7jf">
+                                                <rect key="frame" x="112" y="126" width="95" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" image="hold.png" id="S0A-Hx-ANI">
+                                                <rect key="frame" x="237" y="103" width="31" height="30"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="hold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="Woo-Ag-dK7">
+                                                <rect key="frame" x="205" y="126" width="95" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" image="addcall.png" id="IRx-1I-CWY">
+                                                <rect key="frame" x="19" y="103" width="95" height="30"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="add call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="dAa-UC-lpo">
+                                                <rect key="frame" x="19" y="126" width="95" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" image="mic.png" id="RUX-3X-Zjs">
+                                                <rect key="frame" x="19" y="20" width="95" height="30"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="mute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="SaC-ok-jur">
+                                                <rect key="frame" x="19" y="46" width="95" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" image="pad.png" id="7aw-f6-WLq">
+                                                <rect key="frame" x="145" y="20" width="29" height="30"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="dialpad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="1pM-wG-gxv">
+                                                <rect key="frame" x="112" y="46" width="95" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" image="speaker.png" id="VOz-HN-Dge">
+                                                <rect key="frame" x="237" y="20" width="30" height="30"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="speaker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="kOh-Bl-5Eq">
+                                                <rect key="frame" x="205" y="46" width="94" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                    </view>
+                                    <view hidden="YES" opaque="NO" contentMode="scaleToFill" id="In8-fT-xIe" userLabel="Audio Controls">
+                                        <rect key="frame" x="0.0" y="45" width="320" height="277"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="K4K-2W-eaU" customClass="GradientButton">
+                                                <rect key="frame" x="40" y="55" width="240" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Built-in Audio">
+                                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="builtInAudio:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="wa1-GC-haO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sYU-k2-Ps4" customClass="GradientButton">
+                                                <rect key="frame" x="40" y="117" width="240" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Speaker">
+                                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="speaker:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="vEV-lc-OaL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mzN-O5-TXE" customClass="GradientButton">
+                                                <rect key="frame" x="40" y="178" width="240" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Bluetooth">
+                                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="bluetooth:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="6Va-nq-wki"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" id="fLS-3y-l9A" userLabel="Call Controls">
+                                <rect key="frame" x="0.0" y="465" width="320" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="uOH-lO-Twe" customClass="GradientButton">
+                                        <rect key="frame" x="20" y="20" width="130" height="44"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                        <state key="normal" title=" End" image="end.png">
+                                            <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="end:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="70M-Xy-7Q9"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="tBG-Ph-z7F" customClass="GradientButton">
+                                        <rect key="frame" x="169" y="20" width="130" height="44"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                        <state key="normal" title=" Hide Dialpad">
+                                            <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hideDialpad:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="koF-7d-aHl"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="jpd-E7-Z14" customClass="GradientButton">
+                                        <rect key="frame" x="20" y="20" width="130" height="44"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                        <state key="normal" title=" Cancel" image="decline.png">
+                                            <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelTransferAdd:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="CO8-YR-14h"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="97h-cv-9nT" customClass="GradientButton">
+                                        <rect key="frame" x="169" y="20" width="130" height="44"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                        <state key="normal" title=" Transfer" image="transfer.png">
+                                            <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="transferAdd:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="cuA-bz-3AJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="kTM-G1-7Ug" customClass="GradientButton">
+                                        <rect key="frame" x="20" y="20" width="130" height="44"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                        <state key="normal" title=" Decline" image="decline.png">
+                                            <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="decline:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="4VA-Es-HM7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="iYg-0D-IMo" customClass="GradientButton">
+                                        <rect key="frame" x="169" y="20" width="130" height="44"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                        <state key="normal" title=" Accept" image="accept.png">
+                                            <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="accept:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="scP-Nj-qIf"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Q7d-ru-mMh" customClass="GradientButton">
+                                        <rect key="frame" x="20" y="20" width="280" height="44"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                        <state key="normal" title=" End" image="end.png">
+                                            <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="end:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="1ER-6s-jAb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" id="IJ0-IS-08F" userLabel="Call Info">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" id="nYP-8J-A3c">
+                                        <rect key="frame" x="20" y="10" width="280" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="SdC-WO-ewg">
+                                        <rect key="frame" x="20" y="45" width="280" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EPV-ze-epr" userLabel="Backspace Button">
+                                        <rect key="frame" x="270" y="14" width="30" height="34"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal" image="del.png">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTouchDown:" destination="hQD-Pg-8TC" eventType="touchDown" id="4b8-p7-NNc"/>
+                                            <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpOutside" id="3a6-jg-KJS"/>
+                                            <action selector="buttonTouchUp:" destination="hQD-Pg-8TC" eventType="touchUpInside" id="grj-hD-Nvk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="acceptButton" destination="iYg-0D-IMo" id="UAV-ji-k0T"/>
+                        <outlet property="addCallButton" destination="38i-rR-KI5" id="tvx-Vd-RyZ"/>
+                        <outlet property="audioControls" destination="In8-fT-xIe" id="iMN-Kb-iYa"/>
+                        <outlet property="backspaceButton" destination="EPV-ze-epr" id="X6a-ZU-0vm"/>
+                        <outlet property="bluetoothAudioButton" destination="mzN-O5-TXE" id="u2s-nV-OXz"/>
+                        <outlet property="builtInAudioButton" destination="K4K-2W-eaU" id="Wki-gb-OJA"/>
+                        <outlet property="cancelTransferAddButton" destination="jpd-E7-Z14" id="yQu-es-wBS"/>
+                        <outlet property="contactName" destination="nYP-8J-A3c" id="IhV-ON-DDj"/>
+                        <outlet property="contactNumber" destination="SdC-WO-ewg" id="iGM-Ul-3Oo"/>
+                        <outlet property="declineButton" destination="kTM-G1-7Ug" id="jvZ-TJ-ck7"/>
+                        <outlet property="dialpadButton" destination="ySB-uv-9gn" id="7zi-Td-2Ea"/>
+                        <outlet property="dialpadEndButton" destination="uOH-lO-Twe" id="gNR-Fe-9It"/>
+                        <outlet property="endButton" destination="Q7d-ru-mMh" id="Nqh-iU-K5F"/>
+                        <outlet property="hideDialpadButton" destination="tBG-Ph-z7F" id="TqN-sc-7F9"/>
+                        <outlet property="holdButton" destination="uyO-h1-fVa" id="eEU-VN-ien"/>
+                        <outlet property="incallControlView" destination="PT1-5Q-GnX" id="HCk-xb-b70"/>
+                        <outlet property="incallDialpadView" destination="D6L-kt-Dzw" id="g1G-H6-cXn"/>
+                        <outlet property="mainView" destination="TyC-HJ-cZ2" id="GWY-rc-8fF"/>
+                        <outlet property="muteButton" destination="TPG-uj-Mhp" id="Kk8-9V-Nwc"/>
+                        <outlet property="num0button" destination="O2d-jC-DKK" id="hIS-Ri-1gW"/>
+                        <outlet property="num1button" destination="0cO-tw-UIe" id="AbC-dD-LAM"/>
+                        <outlet property="num2button" destination="vju-y6-Fdo" id="Gi2-Na-LDb"/>
+                        <outlet property="num3button" destination="dCK-ix-BI5" id="TAa-j6-bAF"/>
+                        <outlet property="num4button" destination="qvM-MF-xIP" id="sWC-YV-w8a"/>
+                        <outlet property="num5button" destination="4Uy-xr-l69" id="heX-fG-Aku"/>
+                        <outlet property="num6button" destination="O7j-0N-5CZ" id="GA0-Fx-NZw"/>
+                        <outlet property="num7button" destination="7p8-U3-PeY" id="rve-xK-PLJ"/>
+                        <outlet property="num8button" destination="7Jd-kp-4fy" id="4gM-FM-Vd7"/>
+                        <outlet property="num9button" destination="OhI-Ee-7ZU" id="CBk-Dj-Ct1"/>
+                        <outlet property="poundButton" destination="f9v-Ih-4IW" id="cIZ-bK-lbs"/>
+                        <outlet property="speakerAudioButton" destination="sYU-k2-Ps4" id="pvj-gN-wAQ"/>
+                        <outlet property="speakerButton" destination="XLj-ST-SD1" id="p9o-t1-Ojk"/>
+                        <outlet property="speakerLabel" destination="kOh-Bl-5Eq" id="91d-gW-m64"/>
+                        <outlet property="starButton" destination="H9x-hB-cU5" id="3bR-kx-Z5O"/>
+                        <outlet property="transferAddButton" destination="97h-cv-9nT" id="HXk-cv-uVj"/>
+                        <outlet property="transferButton" destination="fuE-ZT-Y4j" id="uHd-E3-OTF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rqq-1e-CKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="1759"/>
+        </scene>
+        <!--Dial-->
+        <scene sceneID="FdN-qx-vmV">
+            <objects>
+                <viewController storyboardIdentifier="DialViewController" title="Dial" id="Ctd-iQ-77d" userLabel="Dial" customClass="DialViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bQo-o2-c4q">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" id="8r3-lx-bLE" userLabel="Dialling Info">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="1XY-ry-OhG">
+                                        <rect key="frame" x="0.0" y="50" width="320" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="C1M-FG-AOg">
+                                                <rect key="frame" x="20" y="44" width="280" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" contentMode="left" text="" textAlignment="center" lineBreakMode="headTruncation" minimumFontSize="18" id="Pit-e8-M7L">
+                                                <rect key="frame" x="20" y="6" width="280" height="46"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" id="bg4-sg-5RL" userLabel="Keypad">
+                                <rect key="frame" x="-20" y="155" width="362" height="384"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yKY-yD-edY">
+                                        <rect key="frame" x="20" y="0.0" width="107" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTouchDown:" destination="Ctd-iQ-77d" eventType="touchDown" id="CBN-04-iF7"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="2KO-8z-4pF"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpOutside" id="5OQ-9L-P9s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aBk-6Z-Dpx">
+                                        <rect key="frame" x="127" y="0.0" width="107" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTouchDown:" destination="Ctd-iQ-77d" eventType="touchDown" id="nGx-IN-mhq"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpOutside" id="QSr-xG-Kr0"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="rhS-af-9nn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="2r5-A8-xxS">
+                                        <rect key="frame" x="160" y="13" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ABC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="QqP-uV-3oo">
+                                        <rect key="frame" x="160" y="34" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5An-uH-tkf">
+                                        <rect key="frame" x="234" y="0.0" width="107" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.058823533356189728" green="0.098039224743843079" blue="0.20784315466880798" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTouchDown:" destination="Ctd-iQ-77d" eventType="touchDown" id="3nv-Xa-TjU"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="Cc3-5M-RJV"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpOutside" id="dcd-z3-MgW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="L83-EL-Cg7">
+                                        <rect key="frame" x="20" y="69" width="107" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTouchDown:" destination="Ctd-iQ-77d" eventType="touchDown" id="mc0-FO-NtL"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="4Cc-t5-6iX"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpOutside" id="ONd-48-A8b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bGP-4E-cRe">
+                                        <rect key="frame" x="127" y="69" width="107" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTouchDown:" destination="Ctd-iQ-77d" eventType="touchDown" id="hW4-Wp-AHH"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="I8S-84-mZ8"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpOutside" id="SoK-vK-Ygr"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Jcu-Zg-t7A">
+                                        <rect key="frame" x="160" y="82" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="JKL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="NC7-ve-W7v">
+                                        <rect key="frame" x="160" y="103" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="dJ1-Vb-d0z">
+                                        <rect key="frame" x="53" y="13" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="YCC-d7-zfi">
+                                        <rect key="frame" x="53" y="34" width="41" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="47c-YJ-abD">
+                                        <rect key="frame" x="234" y="69" width="107" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTouchDown:" destination="Ctd-iQ-77d" eventType="touchDown" id="JYn-l1-4be"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpOutside" id="W5S-kV-cfe"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="jLs-Yj-hsu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K8w-vv-Y7H">
+                                        <rect key="frame" x="20" y="138" width="107" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTouchDown:" destination="Ctd-iQ-77d" eventType="touchDown" id="RUL-0u-oAk"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="TGu-Vj-Z5c"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpOutside" id="yFg-3X-Olk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="29K-py-JRJ">
+                                        <rect key="frame" x="127" y="138" width="107" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTouchDown:" destination="Ctd-iQ-77d" eventType="touchDown" id="QiE-X6-d85"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpOutside" id="G8O-qy-e1c"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="zsb-1G-FvQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="frY-te-JYv">
+                                        <rect key="frame" x="234" y="138" width="108" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTouchDown:" destination="Ctd-iQ-77d" eventType="touchDown" id="EQG-lD-Qwv"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="KiX-nc-J1U"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpOutside" id="oob-1K-mky"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="P4w-Re-GB2">
+                                        <rect key="frame" x="20" y="207" width="107" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTouchDown:" destination="Ctd-iQ-77d" eventType="touchDown" id="kOo-hj-5Aj"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="JkZ-fH-DDX"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpOutside" id="lYN-CB-0eK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kRi-0K-qom">
+                                        <rect key="frame" x="127" y="207" width="107" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTouchDown:" destination="Ctd-iQ-77d" eventType="touchDown" id="85F-y0-0d4"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="ZTP-8Y-jdm"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpOutside" id="iZh-2O-Bb6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vIc-2L-5de">
+                                        <rect key="frame" x="234" y="207" width="107" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTouchDown:" destination="Ctd-iQ-77d" eventType="touchDown" id="W4e-Gb-spu"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="6GP-f4-GbT"/>
+                                            <action selector="buttonTouchUp:" destination="Ctd-iQ-77d" eventType="touchUpOutside" id="RlN-4v-Rps"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="AVg-h0-Tal">
+                                        <rect key="frame" x="269" y="13" width="39" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DEF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="17R-cy-OSm">
+                                        <rect key="frame" x="269" y="34" width="39" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="mHN-10-HVk">
+                                        <rect key="frame" x="53" y="82" width="41" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="GHI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="JGV-tA-qGY">
+                                        <rect key="frame" x="53" y="103" width="41" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7Qf-aG-gaH">
+                                        <rect key="frame" x="269" y="82" width="39" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MNO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="nJF-98-bX8">
+                                        <rect key="frame" x="269" y="103" width="39" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="DmH-YL-RvW">
+                                        <rect key="frame" x="53" y="151" width="41" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PQRS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="t9W-aW-ODl">
+                                        <rect key="frame" x="53" y="172" width="41" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ZPH-EY-Bv5">
+                                        <rect key="frame" x="160" y="151" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="TUV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Y7t-3D-qp8">
+                                        <rect key="frame" x="160" y="172" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="uTX-JJ-glJ">
+                                        <rect key="frame" x="268" y="151" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WXYZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="bWz-Ng-SNe">
+                                        <rect key="frame" x="268" y="172" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="V14-hK-YJn">
+                                        <rect key="frame" x="53" y="220" width="41" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="LVz-d9-sSE">
+                                        <rect key="frame" x="53" y="242" width="41" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="jSi-fT-2Ob">
+                                        <rect key="frame" x="160" y="220" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ReH-Dx-1vm">
+                                        <rect key="frame" x="160" y="242" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="4W1-rz-vCp">
+                                        <rect key="frame" x="268" y="220" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qTi-RK-Xjj">
+                                        <rect key="frame" x="268" y="242" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nLa-Yh-qYJ" userLabel="Add Contact Button">
+                                        <rect key="frame" x="20" y="276" width="107" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <state key="normal" image="contact.png">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="contactsButtonDown:" destination="Ctd-iQ-77d" eventType="touchDown" id="XHR-Wb-AZv"/>
+                                            <action selector="contactsButtonUp:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="I65-mQ-nEQ"/>
+                                            <action selector="contactsButtonUp:" destination="Ctd-iQ-77d" eventType="touchUpOutside" id="JRN-tR-FQM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IzT-bG-dab" customClass="GradientButton">
+                                        <rect key="frame" x="127" y="276" width="107" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <state key="normal" title=" Call" image="call.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="call:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="wBS-fF-jh0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hSO-88-rhg" userLabel="Delete Button">
+                                        <rect key="frame" x="234" y="276" width="107" height="68"/>
+                                        <color key="backgroundColor" red="0.050980396568775177" green="0.070588238537311554" blue="0.16470588743686676" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <state key="normal" image="del.png">
+                                            <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="delButtonDown:" destination="Ctd-iQ-77d" eventType="touchDown" id="mnZ-iJ-0HG"/>
+                                            <action selector="delButtonUp:" destination="Ctd-iQ-77d" eventType="touchUpInside" id="uKk-31-Ql0"/>
+                                            <action selector="delButtonUp:" destination="Ctd-iQ-77d" eventType="touchUpOutside" id="yjg-Ci-KWE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1019607931" green="0.20392158630000001" blue="0.392156899" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1019607931" green="0.20392158630000001" blue="0.392156899" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dial" image="dial.png" id="Mfr-Gz-tll"/>
+                    <connections>
+                        <outlet property="addContactButton" destination="nLa-Yh-qYJ" id="1JL-M4-2UA"/>
+                        <outlet property="backspaceButton" destination="hSO-88-rhg" id="aV9-Ql-3Lo"/>
+                        <outlet property="callButton" destination="IzT-bG-dab" id="LD2-xn-6P3"/>
+                        <outlet property="contactInfo" destination="C1M-FG-AOg" id="Lwt-zX-uRt"/>
+                        <outlet property="num0button" destination="kRi-0K-qom" id="UMO-jX-9q4"/>
+                        <outlet property="num1button" destination="yKY-yD-edY" id="Yid-NT-PGW"/>
+                        <outlet property="num2button" destination="aBk-6Z-Dpx" id="Pvg-xV-4KP"/>
+                        <outlet property="num3button" destination="5An-uH-tkf" id="hak-hm-OYz"/>
+                        <outlet property="num4button" destination="L83-EL-Cg7" id="fi4-Dt-FRl"/>
+                        <outlet property="num5button" destination="bGP-4E-cRe" id="Xhx-MH-Yav"/>
+                        <outlet property="num6button" destination="47c-YJ-abD" id="stm-Bg-AiY"/>
+                        <outlet property="num7button" destination="K8w-vv-Y7H" id="PV3-xp-kM4"/>
+                        <outlet property="num8button" destination="29K-py-JRJ" id="EOL-6h-OKF"/>
+                        <outlet property="num9button" destination="frY-te-JYv" id="7aL-YN-p7x"/>
+                        <outlet property="number" destination="Pit-e8-M7L" id="wrU-xl-KAs"/>
+                        <outlet property="poundButton" destination="vIc-2L-5de" id="snM-hj-GJy"/>
+                        <outlet property="starButton" destination="P4w-Re-GB2" id="Thb-oi-u0a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8NT-W9-NL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="-694"/>
+        </scene>
+        <!--CallLog-->
+        <scene sceneID="bkG-EM-sEn">
+            <objects>
+                <tableViewController storyboardIdentifier="CallLogViewController" title="Recents" id="ugg-cc-Jlz" userLabel="CallLog" customClass="CallLogViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="WRp-nC-zj1">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="ugg-cc-Jlz" id="7zC-PK-LcD"/>
+                            <outlet property="delegate" destination="ugg-cc-Jlz" id="r61-Pr-fng"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="8TQ-Or-0gl"/>
+                    <connections>
+                        <outlet property="tableView" destination="WRp-nC-zj1" id="PPx-Ir-8DF"/>
+                        <segue destination="Ajd-Rn-4wY" kind="push" identifier="PushCallDetails" id="Abl-wK-d2g"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bq6-3l-CEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="522" y="-163"/>
+        </scene>
+        <!--Call Details View Controller - Call Details-->
+        <scene sceneID="tLz-2F-zBK">
+            <objects>
+                <tableViewController id="Ajd-Rn-4wY" customClass="CallDetailsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="90" sectionHeaderHeight="10" sectionFooterHeight="10" id="jQN-oE-qGQ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Ajd-Rn-4wY" id="v5Q-Yb-0td"/>
+                            <outlet property="delegate" destination="Ajd-Rn-4wY" id="PL3-7n-YeM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Call Details" id="afX-Sx-hR1">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="uVL-td-pJc"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="jQN-oE-qGQ" id="DcX-7e-RDr"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u79-LA-ala" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="-164"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="K1d-Wq-yTj">
+            <objects>
+                <tabBarController wantsFullScreenLayout="YES" id="QpL-GO-rXU" customClass="HomeViewController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Swg-WF-jRy">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hQD-Pg-8TC" kind="modal" identifier="IncomingCall" modalTransitionStyle="coverVertical" id="aDv-CG-fVq"/>
+                        <segue destination="2" kind="modal" identifier="Login" modalTransitionStyle="coverVertical" id="aDq-mU-SqX"/>
+                        <segue destination="hQD-Pg-8TC" kind="modal" identifier="OutgoingCall" id="lWb-Ni-HY7"/>
+                        <segue destination="A4u-35-mZW" kind="relationship" relationship="viewControllers" id="ciU-LJ-FtZ"/>
+                        <segue destination="U5e-1N-JZb" kind="relationship" relationship="viewControllers" id="5RA-3N-foe"/>
+                        <segue destination="Ctd-iQ-77d" kind="relationship" relationship="viewControllers" id="SgD-FD-JWE"/>
+                        <segue destination="zew-MZ-zfu" kind="relationship" relationship="viewControllers" id="DWH-E9-Y92"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k8P-Rw-kqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-640" y="399"/>
+        </scene>
+        <!--Recents-->
+        <scene sceneID="X0P-Ho-weL">
+            <objects>
+                <navigationController title="Recents" id="U5e-1N-JZb" userLabel="Recents" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="1V2-sf-cBX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="IXp-FI-VOQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ugg-cc-Jlz" kind="relationship" relationship="rootViewController" id="qeC-pT-pWW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQK-OV-NzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="-163"/>
+        </scene>
+        <!--Favorites View Controller - Favorites-->
+        <scene sceneID="0wO-cj-Jud">
+            <objects>
+                <tableViewController title="Favorites" id="4As-e7-uHH" customClass="FavoritesViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Mjq-bI-nKB">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="4As-e7-uHH" id="tR8-zI-MDF"/>
+                            <outlet property="delegate" destination="4As-e7-uHH" id="RIC-NV-Jw2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Favorites" id="Wm1-Rz-Hhw"/>
+                    <connections>
+                        <outlet property="tableView" destination="Mjq-bI-nKB" id="anw-uR-WV5"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xds-fQ-XLr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537" y="2373"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="Bkc-hh-PLy">
+            <objects>
+                <navigationController title="Profile" id="zew-MZ-zfu" userLabel="Profile" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="profile.png" id="B89-l7-bRX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="gUJ-KB-34U">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fHK-7j-nJO" kind="relationship" relationship="rootViewController" id="vav-vK-pZU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6oT-Fh-htY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="1118"/>
+        </scene>
+        <!--Navigation Controller - Favorites-->
+        <scene sceneID="Z4l-Yc-xJ1">
+            <objects>
+                <navigationController title="Favorites" id="A4u-35-mZW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Extensions" image="extensions.png" id="f68-Ga-Vhf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="kW4-l0-kRw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4As-e7-uHH" kind="relationship" relationship="rootViewController" id="Kv0-RM-uiw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbq-SQ-Bn0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="2373"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="accept.png" width="28" height="28"/>
+        <image name="addcall.png" width="14" height="14"/>
+        <image name="call.png" width="24" height="24"/>
+        <image name="contact.png" width="30" height="24"/>
+        <image name="decline.png" width="28" height="28"/>
+        <image name="del.png" width="28" height="18"/>
+        <image name="dial.png" width="22" height="22"/>
+        <image name="end.png" width="24" height="24"/>
+        <image name="extensions.png" width="24" height="17"/>
+        <image name="hold.png" width="10" height="14"/>
+        <image name="jazinga-logo-white.png" width="365" height="226"/>
+        <image name="mic.png" width="12" height="24"/>
+        <image name="pad.png" width="22" height="22"/>
+        <image name="profile.png" width="30" height="30"/>
+        <image name="speaker.png" width="30" height="25"/>
+        <image name="transfer.png" width="15" height="15"/>
+    </resources>
+    <classes>
+        <class className="CallDetailsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CallDetailsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="CallLogViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CallLogViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="clearButtonClicked:"/>
+                <relationship kind="action" name="segmentAction:"/>
+                <relationship kind="action" name="update:"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="DialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DialViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonTouchDown:"/>
+                <relationship kind="action" name="buttonTouchUp:"/>
+                <relationship kind="action" name="call:"/>
+                <relationship kind="action" name="contactsButtonDown:"/>
+                <relationship kind="action" name="contactsButtonUp:"/>
+                <relationship kind="action" name="delButtonDown:"/>
+                <relationship kind="action" name="delButtonUp:"/>
+                <relationship kind="outlet" name="addContactButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="backspaceButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="callButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="contactInfo" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="num0button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num1button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num2button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num3button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num4button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num5button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num6button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num7button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num8button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num9button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="number" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="poundButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="starButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="FavoritesViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FavoritesViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="update:"/>
+                <relationship kind="action" name="updatedExtensions:"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="FirstResponder">
+            <source key="sourceIdentifier" type="user"/>
+            <relationships>
+                <relationship kind="action" name="signIn:"/>
+            </relationships>
+        </class>
+        <class className="GradientButton" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GradientButton.h"/>
+        </class>
+        <class className="HomeViewController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+        </class>
+        <class className="InboundViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InboundViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="accept:"/>
+                <relationship kind="action" name="active:"/>
+                <relationship kind="action" name="addCall:"/>
+                <relationship kind="action" name="buttonTouchDown:"/>
+                <relationship kind="action" name="buttonTouchUp:"/>
+                <relationship kind="action" name="callOptions:" candidateClass="SIPCallDetails"/>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="cancelTransferAdd:"/>
+                <relationship kind="action" name="decline:"/>
+                <relationship kind="action" name="end:"/>
+                <relationship kind="action" name="endCallAndAnswer"/>
+                <relationship kind="action" name="hideDialpad:"/>
+                <relationship kind="action" name="hold:"/>
+                <relationship kind="action" name="ignoreCall"/>
+                <relationship kind="action" name="mute:"/>
+                <relationship kind="action" name="showDialpad:"/>
+                <relationship kind="action" name="toggleSpeaker:"/>
+                <relationship kind="action" name="transfer:"/>
+                <relationship kind="action" name="transferAdd:"/>
+                <relationship kind="outlet" name="acceptButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="addCallButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="audioControls" candidateClass="UIView"/>
+                <relationship kind="outlet" name="backspaceButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="bluetoothAudioButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="builtInAudioButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="cancelTransferAddButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="contactName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="contactNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="declineButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="dialpadButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="dialpadEndButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="endButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="hideDialpadButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="holdButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="incallControlView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="incallDialpadView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="muteButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="num0button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num1button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num2button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num3button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num4button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num5button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num6button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num7button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num8button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="num9button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="poundButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="speakerAudioButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="speakerButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="speakerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="starButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="transferAddButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="transferButton" candidateClass="GradientButton"/>
+            </relationships>
+        </class>
+        <class className="LoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="signIn:"/>
+                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="signInButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="username" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ProfileViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="logout:"/>
+                <relationship kind="outlet" name="logoutButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="SIPCallDetails" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SIPCallDetails.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="lWb-Ni-HY7"/>
+        <segue reference="dyD-ta-abA"/>
+    </inferredMetricsTieBreakers>
+</document>

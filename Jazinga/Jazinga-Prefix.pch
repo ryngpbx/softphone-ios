@@ -1,0 +1,47 @@
+//
+// Prefix header for all source files of the 'Login' target in the 'Login' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+#endif
+
+#ifdef DEBUG
+#define DebugLog(s, ...) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define DebugLog(s, ...) 
+#endif
+
+//#define STAGE                     1
+//#define USE_DTMF_DIAL_SOUND       1
+//#define USE_STATIC_ACCOUNT        1
+//#define USE_STUN                  1
+#define NETWORK_SWITCH_OPTION_1
+
+#define PJSIP_AUDIO_DRIVER			"coreaudio"
+
+#ifdef STAGE
+    #define JAZINGA_AUTHENTICATION_URL      "https://<staging>/accounts/app_login/"
+    #define JAZINGA_SETTINGS_UPDATE_URL     "https://<staging>/m/userportal/"
+#else
+    #define JAZINGA_AUTHENTICATION_URL      "https://cloud.jazinga.com/accounts/app_login/"
+    #define JAZINGA_SETTINGS_UPDATE_URL     "https://cloud.jazinga.com/m/userportal/"
+#endif
+
+#define KEEP_ALIVE_INTERVAL     600
+#define DEFAULT_SIP_PORT        5060
+
+#define SOFTPHONE_API_VERSION   1
+#define BUILD_NUMBER            3
+#define BUILD_ARCHITECTURE      @"ios"
+
+#define DEFAULT_ASSETS_DIR      @"assets"
+
